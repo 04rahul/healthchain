@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>HEALTHCHAIN</title>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:600'>
+<link rel="stylesheet" href="./style.css">
+<link rel="icon" href="logo1.png" style="width:10px ">
+
+</head>
+<body style="background-color:white;
+	background-image:url(Picture1.jpg), url(Picture2.jpg), url(Picture3.png),url(Picture.jpg);
+	background-position:left top, right top, left bottom,right bottom;
+	background-repeat:no-repeat, no-repeat, no-repeat, no-repeat;
+	background-attachment: fixed,fixed,fixed,fixed">
+	
+<!-- partial:index.partial.html -->
+<div class="login-wrap" style=" max-width:550px;
+	min-height:400px;" >
+	<div class="login-html" style=" max-width:550px;
+	min-height:400px;" >
+		<img src="logo1.png" height="200" width="450">
+			<div class="container">
+					
+				
+					<input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Sign In</label>
+		<input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
+		<div class="login-form" style=" max-width:550px;
+	min-height:500px;">
+			<div class="sign-in-htm" >
+				<form method="POST" action="dlogin">
+				<div class="group">
+
+					<label for="user" class="label"><font size="3" color="#264d73">Username</font></label>
+					<input id="user" type="text" class="input" name="email">
+				</div>
+				<div class="group">
+					<label for="pass" class="label"><font size="3" color="#264d73">Password</font></label>
+					<input id="pass" type="password" class="input" data-type="password" name="pass">
+				</div>
+				<div class="group">
+					<input id="check" type="checkbox" class="check" checked>
+					<label for="check"><span class="icon"></span><font size="4"> Keep me Signed in </font></label>
+				</div>
+			
+				<div class="group">
+				<font size="8" color="red"><input type="submit" class="button" value="Sign In"></font>
+				</form>
+			</div>
+				<div class="hr"></div>
+				</div>
+				
+				
+
+			<div class="sign-up-htm" style=" max-width:550px;
+	min-height:400px;">
+				<div class="group">
+					<form name="dsignup" method="POST" action="/dsignup">
+					<label for="fname" class="label"><font size="3" color="#264d73">Firstname</font></label>
+					<input id="fname" type="text" class="input" name="fname">
+				</div>
+				<div class="group">
+					<label for="lname" class="label"><font size="3" color="#264d73">Lastname</font></label>
+					<input id="lname" type="text" class="input" name="lname">
+				</div>
+				<div class="group">
+					<label for="mailadd" class="label"><font size="3" color="#264d73">Email Address</font></label>
+					<input id="mailadd" type="text" class="input" name="email">
+				</div>
+				<div class="group">
+					<label for="pass" class="label"><font size="3" color="#264d73">Password</font></label>
+					<input id="pass" type="pass" class="input" data type="password" name="pass">
+				</div>
+				<div class="group">
+					<label for="pno" class="label"><font size="3" color="#264d73">Phone No</font></label>
+					<input id="pno" type="text" class="input" name="phone" >
+					</div>
+				
+				<div class="group">
+						<font size="8" color="white"><input type="submit" class="button" value="Sign Up"></font><br>
+						<center><font size="3" color="red" style="text-align:center; ">	<label for="tab-1"> Already Member?</a></label></font></center>
+				</div>
+
+				<div class="hr"></div>
+				
+			</div>
+		</div>
+	</div>
+</div>
+<!-- partial -->
+  
+</body>
+</html>
